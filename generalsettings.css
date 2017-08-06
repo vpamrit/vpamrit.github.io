@@ -107,6 +107,7 @@
     }
 
     html {
+        border: red solid 2px;
         margin: 0 0;
         padding: 0 0;
         height: 100%;
@@ -181,10 +182,12 @@
     }
 
     body {
+        border: blue solid 2px;
         background-color: transparent;
-        font-family: Avenir;
+        background-size: cover;
         min-height: 100%;
         min-width: 100%;
+        font-family: Avenir;
         font-size: calc(12px + 0.2vw);
         /*font-family: "Frutiger Next LT W1G";*/
     }
