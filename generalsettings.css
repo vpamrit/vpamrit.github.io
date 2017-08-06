@@ -157,7 +157,6 @@
     }
 
     body {
-        border: blue solid 2px;
         background-color: transparent;
         background-size: cover;
         height:100%;
@@ -165,7 +164,6 @@
         min-width: 100%;
         font-family: Avenir;
         font-size: calc(12px + 0.2vw);
-        overflow: scroll;
         /*font-family: "Frutiger Next LT W1G";*/
     }
 
