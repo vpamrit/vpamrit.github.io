@@ -107,6 +107,8 @@
     }
 
     html {
+        margin: 0 0;
+        padding: 0 0;
         height: 100%;
         width: 100%;
         top: 0;
@@ -117,9 +119,7 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        height:100%;
+        overflow: hidden;
         min-height:100%;
     }
 
