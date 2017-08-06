@@ -129,6 +129,22 @@
         overflow: hidden;
     }
 
+    @media only handheld{
+        html {
+        background-image:url('images/artist2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+        }
+    }
+
+
 
     #projects h6 {
         color: firebrick;
