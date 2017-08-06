@@ -7,7 +7,7 @@ $(function(){ /* to make sure the script runs after page load */
     $("#body").removeClass("preload");
 
     $('#toknowledge').css({position: 'fixed', left: $(window).innerWidth()/2 - arrow.outerWidth()/2, bottom: '5vh'});
-        runIt();
+        // runIt();
 
     $('a.read_more').click(function(event){ /* find all a.read_more elements and bind the following code to them */
 
