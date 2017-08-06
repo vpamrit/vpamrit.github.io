@@ -26,10 +26,15 @@ $(document).ready(function(){
         .staggerFromTo($("#part4").find("span"), 0.8, {autoAlpha:0}, {autoAlpha:1}, 0.8, "+=0.6")
         .staggerFromTo($("#part5").find("span"), 0.5, {autoAlpha:0}, {autoAlpha:1}, 0.2, "+=1.0")
         // .staggerFromTo($("#part6").find("span"), 0, {autoAlpha:0}, {autoAlpha:1})
-        .to($("#toknowledge"), 0.1, {visibility: 'visible', opacity: 1}, '+=0.2')
+        .to($("#toknowledge"), 0.1, {visibility: 'visible'}, '+=0.2')
         .add(function(){
-            $("#toknowledge").css({visibility: 'visible', opacity: 1});
-            intro_over = true;
+            if(!scrolledDown){
+                $("#toknowledge").css({visibility: 'visible', opacity: 1});
+                intro_over = true;
+            }
+            else {
+                $("#toknowledge").css({visibility: 'hidden', opacity: 0});
+            }
         });
 
     animations.play();

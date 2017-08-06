@@ -12,19 +12,6 @@ $(document).ready(function() {
     $("#right").click(function(){queueright()});
     $("#left").click(function(){queueleft()});
 
-    $(window).on("swipeleft",function(){
-        if(scrolledDown) {
-            queueleft();
-        }
-    });
-
-    $(window).on("swiperight",function(){
-        if(scrolledDown) {
-            queueright();
-        }
-    });
-
-
     function queueright(){
         console.log(queue.size);
         if(queue.length > 0 && queue[0] != 1){
@@ -131,26 +118,45 @@ $(document).ready(function() {
         clearAll();
         menu[0].addClass("focused");
         menu[curposition].addClass("after");
+        if(!scrolledDown) {
+            $('#toknowledge').click();
+
+        }
     });
     $("#b").click(function(){spin(1);
         clearAll();
         menu[1].addClass("focused");
         menu[curposition].addClass("after");
+        if(!scrolledDown) {
+            $('#toknowledge').click();
+
+        }
     });
     $("#c").click(function(){spin(2);
         clearAll();
         menu[2].addClass("focused");
         menu[curposition].addClass("after");
+        if(!scrolledDown) {
+            $('#toknowledge').click();
+
+        }
     });
     $("#d").click(function(){spin(3);
         clearAll();
         menu[3].addClass("focused");
         menu[curposition].addClass("after");
+        if(!scrolledDown) {
+            $('#toknowledge').click();
+
+        }
     });
     $("#e").click(function(){spin(4);
         clearAll();
         menu[4].addClass("focused");
         menu[curposition].addClass("after");
+        if(!scrolledDown) {
+            $('#toknowledge').click();
+        }
     });
 
     function spin(value){

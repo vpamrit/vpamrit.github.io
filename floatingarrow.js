@@ -109,14 +109,16 @@ $(window).bind('scrollDown', function () {
 function popinmenu(){
     nav.css({visibility: "visible"});
     $("#menubar").css({visibility: "visible"});
+    $("#botbar").css({visibility: "visible", bottom:"0px"});
 
-        var left = ($(window).innerWidth() - nav[0].offsetWidth)/2;
-        nav.css({top: -1*nav[0].offsetHeight+"px", right: left + 'px'});
-        setTimeout(function(){TweenMax.to(nav, 1.2, {top:"0px", ease: Circ.easeOut});}, 250);
+    if($(window).innerHeight() > 449 && $(window).innerWidth() > 601){
+    var left = ($(window).innerWidth() - nav[0].offsetWidth)/2;
+    nav.css({top: -1*nav[0].offsetHeight+"px", right: left + 'px'});
+    setTimeout(function(){TweenMax.to(nav, 1.2, {top:"0px", ease: Circ.easeOut});}, 250);
 
-    $("#botbar").css({visibility: "visible"});
     $("#botbar").css({bottom: -1*$("#botbar")[0].offsetHeight+"px"});
     setTimeout(function(){TweenMax.to($("#botbar"), 1.2, {bottom:"0px", ease: Circ.easeOut});}, 250);
+    }
 }
 
 //this can stack animations (which is stupid!)
