@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="333c55e1-18f1-4f72-a677-7df0107dd73a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generalsettings.css" afterPath="$PROJECT_DIR$/generalsettings.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="330">
+              <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -42,21 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generalsettings.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="generalsettings.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generalsettings.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="159" column="10" lean-forward="false" selection-start-line="159" selection-start-column="10" selection-end-line="159" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carousel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/carousel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2684">
-              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="546">
+              <caret line="314" column="20" lean-forward="true" selection-start-line="314" selection-start-column="20" selection-end-line="314" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -106,6 +95,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="carousel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carousel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -123,6 +122,11 @@
       <find>overflow-y</find>
       <find>preload</find>
       <find>html</find>
+      <find>resume</find>
+      <find>webkit</find>
+      <find>box</find>
+      <find>.box</find>
+      <find>middle</find>
       <find>body</find>
     </findStrings>
     <replaceStrings>
@@ -139,8 +143,8 @@
         <option value="$PROJECT_DIR$/intro.js" />
         <option value="$PROJECT_DIR$/PhoneSize.css" />
         <option value="$PROJECT_DIR$/floatingarrow.js" />
-        <option value="$PROJECT_DIR$/generalsettings.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/generalsettings.css" />
       </list>
     </option>
   </component>
@@ -289,12 +293,12 @@
       <updated>1501999087560</updated>
       <workItem from="1501999088935" duration="225000" />
       <workItem from="1502008246589" duration="5710000" />
-      <workItem from="1502015125455" duration="7758000" />
+      <workItem from="1502015125455" duration="10099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13693000" />
+    <option name="totallyTimeSpent" value="16034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -419,14 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2684">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/intro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -463,18 +459,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generalsettings.css">
+    <entry file="file://$PROJECT_DIR$/carousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="159" column="10" lean-forward="false" selection-start-line="159" selection-start-column="10" selection-end-line="159" selection-end-column="10" />
+        <state relative-caret-position="302">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="330">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -487,6 +483,14 @@
             <element signature="n#style#0;n#span#0;n#li#1;n#ul#1;n#nav#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#2;n#ul#1;n#nav#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generalsettings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="314" column="20" lean-forward="true" selection-start-line="314" selection-start-column="20" selection-end-line="314" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
