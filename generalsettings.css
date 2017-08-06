@@ -1,5 +1,15 @@
 @media all {
 
+    @font-face {
+        font-family: "Futura LT";
+        src: url('./fonts/futura-lt-medium.ttf');
+    }
+
+    @font-face {
+        font-family: "Moon";
+        src: url('./fonts/Moon Light.otf');
+    }
+
     .preload * {
         -webkit-transition: none !important;
         -moz-transition: none !important;
@@ -289,7 +299,7 @@
     #botbar {
         z-index: 10;
         color: white;
-        font-family: Moon;
+        font-family: "Moon";
         visibility: hidden;
         position: fixed;
         width: 100%;
