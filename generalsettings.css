@@ -116,15 +116,24 @@
         display: none;
     }
 
-    html {
-        height: 100%;
-        width: 100%;
-    }
+    /*html {*/
+        /*background-image:url('images/artist2.jpg');*/
+        /*background-repeat: no-repeat;*/
+        /*background-attachment: fixed;*/
+        /*background-position: center center;*/
+        /*-webkit-background-size: cover;*/
+        /*-moz-background-size: cover;*/
+        /*-o-background-size: cover;*/
+        /*background-size: cover;*/
+        /*height: 100%;*/
+        /*overflow: hidden;*/
+    /*}*/
 
-    body {
+    /*@media only handheld{*/
+        html {
         background-image:url('images/artist2.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-repeat: repeat;
+        background-attachment: scroll;
         background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -132,9 +141,8 @@
         background-size: cover;
         height: 100%;
         overflow: hidden;
-        font-family: Avenir;
-        font-size: calc(12px + 0.2vw);
-    }
+        }
+    /*}*/
 
 
 
@@ -175,17 +183,17 @@
         font-size: inherit;
     }
 
-    /*body {*/
-        /*background-color: transparent;*/
-        /*background-size: cover;*/
-        /*height:100%;*/
-        /*min-height: 100%;*/
-        /*min-width: 100%;*/
-        /*font-family: Avenir;*/
-        /*font-size: calc(12px + 0.2vw);*/
-        /*overflow: hidden;*/
-        /*!*font-family: "Frutiger Next LT W1G";*!*/
-    /*}*/
+    body {
+        background-color: transparent;
+        background-size: cover;
+        height:100%;
+        min-height: 100%;
+        min-width: 100%;
+        font-family: Avenir;
+        font-size: calc(12px + 0.2vw);
+        overflow: hidden;
+        /*font-family: "Frutiger Next LT W1G";*/
+    }
 
     .row-center p {
         text-align: center;
