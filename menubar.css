@@ -1,0 +1,28 @@
+.layerone > p{
+    position: absolute;
+    top: 10px;
+    list-style: none;
+}
+
+.menu>ul>li{
+    display:none;
+    opacity:0;
+    border-style:solid;
+    border-color: black;
+    padding:0;
+    margin-bottom:0;
+    white-space: nowrap;
+    background-color: gainsboro;
+}
+
+.menu p:hover + ul > li {
+    display: block;
+    white-space: nowrap;
+    font-size: 1vw;
+}
+
+.menu ul:hover li {
+    display: block;
+    white-space: nowrap;
+    font-size: 1vw;
+}

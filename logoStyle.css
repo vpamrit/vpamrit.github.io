@@ -1,0 +1,42 @@
+.logo{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    z-index:100;
+}
+
+#sql{
+    top:62vw;
+    left:3vw;
+}
+
+#cplus{
+    top:56vw;
+    right:4vw;
+}
+
+#java{
+    height:75px;
+    width:75px;
+    top:62vw;
+    right:11vw;
+}
+
+#bootstrap{
+    height:60px;
+    width:60px;
+    top:70vw;
+    right: 5vw;
+}
+
+#jquery{
+    top:70vw;
+    left:6vw;
+}
+
+#python{
+    height:75px;
+    width:75px;
+    top:53vw;
+    left: 3vw;
+}

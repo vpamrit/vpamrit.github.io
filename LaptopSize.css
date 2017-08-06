@@ -1,0 +1,179 @@
+
+@media only screen and (min-width : 1180px) and (min-height: 450px) {
+    /* Styles */
+    .hider {
+        display: none !important;
+    }
+
+    /*Sub-sizes */
+    @media (max-width: 1200px) {
+        .portrait-image {
+            min-width: 200px;
+        }
+        #skills .row {
+            font-size: calc(18px + 0.2vh);
+        }
+    }
+
+    @media (min-width: 1250px){
+        .portrait-image {
+            min-width: 220px;
+            max-width: 260px;
+        }
+
+        #skills .row {
+            font-size: calc(18px + 0.2vh);
+        }
+    }
+
+
+    @media (min-width: 1450px){
+        .portrait-image {
+            width: auto;
+            height: auto;
+        }
+
+        #skills .row {
+            font-size: calc(20px + 0.2vh);
+        }
+    }
+
+
+    h6 {
+        font-size: calc(12px + 0.1vw + 0.1vh);
+        padding-bottom: 10px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+
+    .box {
+        width: 55vw;
+        height: 55vh;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: all 2s ease;
+    }
+
+    .centered {
+        position: absolute;
+        visibility: visible;
+        top: 150%;
+        right: 22.5vw;
+        transform: scale(1.0);
+        transition: all 1s ease;
+    }
+
+    .rightside {
+        position: absolute;
+        visibility: visible;
+        overflow: hidden;
+        top: 150%;
+        transform: scale(0.3);
+        right: -24vw;
+        transition: all 1s ease;
+    }
+
+    .leftside {
+        position: absolute;
+        visibility: visible;
+        top: 150%;
+        right: 69vw;
+        overflow: hidden;
+        transform: scale(0.3);
+        transition: all 1s ease;
+    }
+
+    .routside {
+        position: absolute;
+        overflow: hidden;
+        top: 150%;
+        transform: scale(0.3) translateX(100%);
+        right: -35vw;
+        visibility: hidden;
+        transition: all 1s ease;
+    }
+
+    .loutside {
+        position: absolute;
+        overflow: hidden;
+        top: 150%;
+        transform: scale(0.3) translateX(-100%);
+        right: 80vw;
+        visibility: hidden;
+        transition: all 1s ease;
+    }
+
+    #dropbutton {
+        display: none;
+    }
+
+    #menubar nav {
+        left: 0;
+        display: block;
+        visibility: hidden;
+        background-color: rgba(0, 0, 0, 1);
+        position: fixed;
+        padding-top: 5px;
+        width: 100vw;
+        height: calc(44px + 0.2vh);
+        overflow: hidden;
+        text-align: center;
+        transition: width 1s ease-in-out;
+    }
+
+    #menubar nav ul {
+        display: block;
+        white-space: nowrap;
+        list-style: none;
+        height: 100%;
+        padding: 0;
+        font-size: calc(18px + 0.2vh);
+        color: white;
+        width: 100%;
+    }
+
+    #menubar ul li {
+        padding: 0;
+        display: inline-table;
+        height: 95%;
+        min-width: 10px;
+        width: 15vw;
+    }
+
+    #menubar nav ul li span {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        text-decoration: none;
+        width: 15%;
+    }
+
+    #menubar nav ul li:hover {
+        color: firebrick;
+        text-decoration: none;
+        background-color: #181818;
+        width: 15%;
+        transition: all 0.4s;
+    }
+
+    #menubar nav ul li:hover:after {
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .focused {
+        text-decoration: none;
+        color: firebrick;
+        border-bottom: 3px firebrick solid;
+        background-color: #181818;
+    }
+
+    #resume {
+        transform: translateX(-20%) translateY(50%) scale(1.1);
+    }
+
+}
