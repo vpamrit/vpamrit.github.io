@@ -42,18 +42,6 @@
         height: 100%;
     }
 
-    @media (max-width: 770px) {
-        .portrait-image{
-            padding: 2px;
-            max-width: 180px;
-            max-height: 220px;
-        }
-
-        #portrait {
-            font-size: calc(12px + 0.2vh);
-        }
-
-    }
 
     .box {
         width: 70vw;
@@ -72,50 +60,6 @@
         overflow: auto;
         transform: scale(1.0);
         transition: all 1s ease;
-    }
-
-    @media (min-width: 850px) {
-        .rightside {
-            position: absolute;
-            visibility: visible;
-            overflow: hidden;
-            top: 150%;
-            transform: scale(0.3);
-            right: -42vw;
-            transition: all 1s ease;
-        }
-
-        .leftside {
-            position: absolute;
-            visibility: visible;
-            top: 150%;
-            right: 72vw;
-            overflow: hidden;
-            transform: scale(0.3);
-            transition: all 1s ease;
-        }
-    }
-
-    @media (max-width: 850px) {
-        .rightside {
-            position: absolute;
-            visibility: hidden;
-            overflow: hidden;
-            top: 150%;
-            transform: scale(0.3);
-            right: -48vw;
-            transition: all 1s ease;
-        }
-
-        .leftside {
-            position: absolute;
-            visibility: hidden;
-            top: 150%;
-            right: 78vw;
-            overflow: hidden;
-            transform: scale(0.3);
-            transition: all 1s ease;
-        }
     }
 
 
@@ -209,4 +153,61 @@
         color: firebrick;
     }
 
+}
+
+@media only screen and (min-width: 601px) and (max-width: 770px) and (min-height: 450px){
+    .portrait-image{
+        padding: 2px;
+        max-width: 180px;
+        max-height: 220px;
+    }
+
+    #portrait {
+        font-size: calc(12px + 0.2vh);
+    }
+
+}
+
+@media only screen and  (min-width: 850px) and (max-width : 1180px) and (min-height: 450px) {
+    .rightside {
+        position: absolute;
+        visibility: visible;
+        overflow: hidden;
+        top: 150%;
+        transform: scale(0.3);
+        right: -42vw;
+        transition: all 1s ease;
+    }
+
+    .leftside {
+        position: absolute;
+        visibility: visible;
+        top: 150%;
+        right: 72vw;
+        overflow: hidden;
+        transform: scale(0.3);
+        transition: all 1s ease;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 850px) and (min-height: 450px){
+    .rightside {
+        position: absolute;
+        visibility: hidden;
+        overflow: hidden;
+        top: 150%;
+        transform: scale(0.3);
+        right: -48vw;
+        transition: all 1s ease;
+    }
+
+    .leftside {
+        position: absolute;
+        visibility: hidden;
+        top: 150%;
+        right: 78vw;
+        overflow: hidden;
+        transform: scale(0.3);
+        transition: all 1s ease;
+    }
 }

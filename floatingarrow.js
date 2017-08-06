@@ -1,13 +1,15 @@
 // $(function(){
 //     alert("My First Jquery Test");
 // });
-$(document).ready(function(){ $(window).scrollTop(0);});
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});
 
 $(function(){ /* to make sure the script runs after page load */
+    $(window).scrollTop(0);
     $("#body").removeClass("preload");
 
     $('#toknowledge').css({position: 'fixed', left: $(window).innerWidth()/2 - arrow.outerWidth()/2, bottom: '5vh'});
-        // runIt();
 
     $('a.read_more').click(function(event){ /* find all a.read_more elements and bind the following code to them */
 
@@ -50,7 +52,6 @@ $(function(){ /* to make sure the script runs after page load */
             button.addClass('button_open');
         }
         open = !open;
-        console.log( $('#menubar').find('nav'));
     });
 
 
@@ -70,7 +71,7 @@ if($(window).innerWidth() >= 601) {
     leftarrow.css({position: 'fixed', left: leftar, top: newPos + 'px'});
     rightarrow.css({position: 'fixed', right: leftar, bottom: newPos + 'px'});
 }
-else if($(window).innerWidth() > 390) {
+else if($(window).innerWidth() >= 395) {
     var newPos = ($(window).height()/2 - $('#left').outerHeight()/2);
     var leftar = ($(window).innerWidth() - $($('.centered')[0]).outerWidth())/2 - Math.max(40, $('#left').outerWidth()/2 + $(window).innerWidth()/25);
     leftarrow.css({position: 'fixed', left: leftar, top: newPos + 'px'});
@@ -133,7 +134,7 @@ $(document).keydown(function(e) {
 
 function runIt() {
     if(!scrolledDown && !stop){
-        arrow.animate({top:'+=20'}, 1000);
-        arrow.animate({top:'-=20'}, 1000, runIt);
+        arrow.animate({bottom:'+20'}, 1000);
+        arrow.animate({bottom:'-=20'}, 1000, runIt);
     }
 }

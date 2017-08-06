@@ -5,39 +5,6 @@
         display: none !important;
     }
 
-    /*Sub-sizes */
-    @media (max-width: 1200px) {
-        .portrait-image {
-            min-width: 200px;
-        }
-        #skills .row {
-            font-size: calc(18px + 0.2vh);
-        }
-    }
-
-    @media (min-width: 1250px){
-        .portrait-image {
-            min-width: 220px;
-            max-width: 260px;
-        }
-
-        #skills .row {
-            font-size: calc(18px + 0.2vh);
-        }
-    }
-
-
-    @media (min-width: 1450px){
-        .portrait-image {
-            width: auto;
-            height: auto;
-        }
-
-        #skills .row {
-            font-size: calc(20px + 0.2vh);
-        }
-    }
-
 
     h6 {
         font-size: calc(12px + 0.1vw + 0.1vh);
@@ -141,7 +108,7 @@
         display: inline-table;
         height: 95%;
         min-width: 10px;
-        width: 15vw;
+        width: 15%;
     }
 
     #menubar nav ul li span {
@@ -176,4 +143,37 @@
         transform: translateX(-20%) translateY(50%) scale(1.1);
     }
 
+}
+
+/*Sub-sizes */
+@media only screen and (max-width: 1200px) and (min-width : 1180px) and (min-height: 450px){
+    .portrait-image {
+        min-width: 200px;
+    }
+    #skills .row {
+        font-size: calc(18px + 0.2vh);
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width : 1180px) and (min-height: 450px) and (min-width: 1250px){
+    .portrait-image {
+        min-width: 220px;
+        max-width: 260px;
+    }
+
+    #skills .row {
+        font-size: calc(18px + 0.2vh);
+    }
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width : 1180px) and (min-height: 450px) and  (min-width: 1450px){
+    .portrait-image {
+        width: auto;
+        height: auto;
+    }
+
+    #skills .row {
+        font-size: calc(20px + 0.2vh);
+    }
 }

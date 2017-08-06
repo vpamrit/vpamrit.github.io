@@ -11,8 +11,9 @@ $(window).resize(function(){
 
 function runIt() {
     if(!scrolledDown){
-        $('#toknowledge').animate({top:'+=20'}, 1000);
-        $('#toknowledge').animate({top:'-=20'}, 1000, runIt);
+        console.log(parseInt($('#toknowledge').css('bottom') + 30));
+        arrow.animate({bottom: parseInt($('#toknowledge').css('bottom')) + 20}, 1000);
+        arrow.animate({bottom: parseInt($('#toknowledge').css('bottom')) - 20}, 1000, runIt);
     }
 }
 
@@ -37,8 +38,8 @@ function onResize() {
         });
         if (intro_over && !scrolledDown) {
             $('#toknowledge').css({visibility: 'visible', opacity: 1});
+            setTimeout(function(){runIt()}, 5000);
         }
-        runIt();
         $("#toknowledge").click(function () {
             scrolledDown = true;
             $(this).trigger('scrollDown');
@@ -47,13 +48,15 @@ function onResize() {
     var leftarrow = $("#left");
     var rightarrow = $("#right");
 
+    console.log($(window).innerWidth());
+
     if($(window).innerWidth() > 601) {
         var newPos = ($(window).height()/2 - $('#left').outerHeight()/2);
         var leftar = ($(window).innerWidth() - $($('.centered')[0]).outerWidth())/2 - Math.max(65, $('#left').outerWidth()/2 + $(window).innerWidth()/25);
         leftarrow.css({position: 'fixed', left: leftar, top: newPos + 'px'});
         rightarrow.css({position: 'fixed', right: leftar, bottom: newPos + 'px'});
     }
-    else if($(window).innerWidth() > 390) {
+    else if($(window).innerWidth() >= 395) {
         var newPos = ($(window).height()/2 - $('#left').outerHeight()/2);
         var leftar = ($(window).innerWidth() - $($('.centered')[0]).outerWidth())/2 - Math.max(40, $('#left').outerWidth()/2 + $(window).innerWidth()/25);
         leftarrow.css({position: 'fixed', left: leftar, top: newPos + 'px'});

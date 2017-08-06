@@ -17,6 +17,7 @@ $(document).ready(function() {
         if(queue.length > 0 && queue[0] != 1){
             queue = [];
         }
+        if(queue.length < 3)
         queue.push(1);
     }
 
@@ -24,6 +25,7 @@ $(document).ready(function() {
         if(queue.length > 0 && queue[0] != 2){
             queue = [];
         }
+        if(queue.length < 3)
         queue.push(2);
     }
 
@@ -160,6 +162,7 @@ $(document).ready(function() {
     });
 
     function spin(value){
+        queue = [];
         var ldistance = (curposition-value + carsize) % carsize;
         var rdistance = (value-curposition + carsize) % carsize;
         queue.length = 0;
