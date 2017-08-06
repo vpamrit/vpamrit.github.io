@@ -223,14 +223,6 @@
             font-size: calc(10px + 1.5vw);
         }
 
-        @media only screen
-            and (max-height: 270px) {
-            html {
-                overflow-y: visible !important;
-            }
-        }
-
-
         .breaker {
             display: none;
         }
