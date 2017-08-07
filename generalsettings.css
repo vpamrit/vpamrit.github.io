@@ -394,7 +394,7 @@
 
 }
 
-@media only handheld{
+@media (max-width: 1024px){
     #bg {
         visibility: visible;
         position: fixed;
@@ -402,14 +402,31 @@
         left: 0;
 
         /* Preserve aspect ratio */
-        min-width: 100%;
-        min-height: 100%;
+        /*width: 100vw;*/
+        /*min-height: 100%;*/
+        -webkit-backface-visibility: hidden;
+
+        background: url(images/artist2.jpg);
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 
     html {
         background: transparent;
         background-size: 100% auto;
+        height:100%;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
     }
+
+
 
     /*html {*/
         /*background-image:url('images/artist2.jpg');*/
