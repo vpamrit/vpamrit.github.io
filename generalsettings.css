@@ -223,10 +223,10 @@
 
     #left:hover {
         opacity: 1.0;
-        -webkit-transition: none !important;
-        -moz-transition: none !important;
-        -ms-transition: none !important;
-        -o-transition: none !important;
+        -webkit-transition: opacity .55s ease-in-out;
+        -moz-transition: opacity .55s ease-in-out;
+        -ms-transition: opacity .55s ease-in-out;
+        -o-transition: opacity .55s ease-in-out;
         transition: opacity .55s ease-in-out;
     }
 
@@ -240,19 +240,19 @@
         background-size: 100%;
         z-index: 11;
         opacity: 0.4;
-        -webkit-transition: none !important;
-        -moz-transition: none !important;
-        -ms-transition: none !important;
-        -o-transition: none !important;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
         transition: opacity 1s ease-in-out;
     }
 
     #right:hover {
         opacity: 1.0;
-        -webkit-transition: none !important;
-        -moz-transition: none !important;
-        -ms-transition: none !important;
-        -o-transition: none !important;
+        -webkit-transition: opacity .55s ease-in-out;
+        -moz-transition: opacity .55s ease-in-out;
+        -ms-transition: opacity .55s ease-in-out;
+        -o-transition: opacity .55s ease-in-out;
         transition: opacity .55s ease-in-out;
     }
 
@@ -382,10 +382,10 @@
         height: 30px;
         overflow: hidden;
         text-align: center;
-        -webkit-transition: none !important;
-        -moz-transition: none !important;
-        -ms-transition: none !important;
-        -o-transition: none !important;
+        -webkit-transition: width 1s ease-in-out;
+        -moz-transition: width 1s ease-in-out;
+        -ms-transition: width 1s ease-in-out;
+        -o-transition: width 1s ease-in-out;
         transition: width 1s ease-in-out;
     }
 
