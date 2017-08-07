@@ -9,6 +9,23 @@ $(window).on("orientationchange",function(){
     $('#body').removeClass('preload');
 });
 
+$(window).bind('center', function(){
+        var el = $(document.getElementsByClassName("centered")[0]);
+        var elOffset = el.offset().top;
+        var elHeight = el.height();
+        var windowHeight = $(window).height();
+        var offset;
+
+        if (elHeight < windowHeight) {
+            offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+        }
+        else {
+            offset = elOffset;
+        }
+        var speed = 20;
+        $('html, body').animate({scrollTop:offset}, speed);
+});
+
 
 $(window).resize(function(){
     alert("Resize has changed!");
@@ -79,7 +96,8 @@ function onResize() {
 
     if(scrolledDown) {
         var element = document.getElementsByClassName("centered")[0];
-        $('html, body').animate({scrollTop: $(element).offset().top - ($(window).height() - $(element).outerHeight(true)) / 2}, 10);
+        // $('html, body').css({scrollTop: $(element).scrollTop() - ($(window).height() - $(element).outerHeight(true)) / 2});
+        $(window).trigger('center');
         var nav = $("#navigation");
         var left = ($(window).innerWidth() - nav[0].offsetWidth) / 2;
         nav.animate({right: left + 'px'}, 50);
