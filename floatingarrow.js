@@ -116,6 +116,7 @@ $(window).bind('scrollDown', function () {
 function popinmenu(){
     nav.css({visibility: "visible"});
     $("#menubar").css({visibility: "visible"});
+    $("#menubar").css({visibility: "visible", top:"0px"});
     $("#botbar").css({visibility: "visible", bottom:"0px"});
 
     if($(window).innerHeight() > 449 && $(window).innerWidth() > 601){
