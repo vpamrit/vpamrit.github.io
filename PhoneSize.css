@@ -47,7 +47,7 @@
     }
 
     #dropbutton {
-        display: block;
+        display: block !important;
         position: fixed;
         top: 0;
         background: url("images/menu_icon.png");

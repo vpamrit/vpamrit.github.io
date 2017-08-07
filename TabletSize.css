@@ -104,9 +104,9 @@
         transition: all 1s ease;
     }
 
-    #dropbutton {
-        display: none;
-    }
+    /*#dropbutton {*/
+        /*display: none;*/
+    /*}*/
 
     #menubar nav {
         left: 0;

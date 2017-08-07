@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="333c55e1-18f1-4f72-a677-7df0107dd73a" name="Default" comment="" />
+    <list default="true" id="333c55e1-18f1-4f72-a677-7df0107dd73a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopSize.css" afterPath="$PROJECT_DIR$/LaptopSize.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PhoneSize.css" afterPath="$PROJECT_DIR$/PhoneSize.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TabletSize.css" afterPath="$PROJECT_DIR$/TabletSize.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/onResize.js" afterPath="$PROJECT_DIR$/onResize.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,7 +23,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
@@ -49,21 +54,36 @@
       <file leaf-file-name="TabletSize.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TabletSize.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="239" column="26" lean-forward="false" selection-start-line="239" selection-start-column="16" selection-end-line="239" selection-end-column="26" />
+            <state relative-caret-position="326">
+              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding>
-                <element signature="e#4415#4671#0" expanded="false" />
-                <element signature="e#4673#5569#0" expanded="false" />
+                <element signature="e#4427#4683#0" expanded="false" />
+                <element signature="e#4685#5581#0" expanded="false" />
+                <element signature="e#5583#6473#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhoneSize.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LaptopSize.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaptopSize.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+              <folding>
+                <element signature="e#4496#4708#0" expanded="false" />
+                <element signature="e#4710#4973#0" expanded="false" />
+                <element signature="e#4976#5231#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhoneSize.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PhoneSize.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7568">
-              <caret line="344" column="43" lean-forward="true" selection-start-line="344" selection-start-column="43" selection-end-line="344" selection-end-column="43" />
+            <state relative-caret-position="282">
+              <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -73,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/generalsettings.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="216" column="17" lean-forward="false" selection-start-line="216" selection-start-column="16" selection-end-line="216" selection-end-column="17" />
+              <caret line="62" column="15" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -82,8 +102,8 @@
       <file leaf-file-name="onResize.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/onResize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="550">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -127,8 +147,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-family</find>
-      <find>preload</find>
       <find>overflow-y</find>
       <find>Moon</find>
       <find>390</find>
@@ -157,6 +175,8 @@
       <find>transition</find>
       <find>transition:</find>
       <find>ease-in-out</find>
+      <find>drop</find>
+      <find>dropbutton</find>
     </findStrings>
     <replaceStrings>
       <replace>https://github.com/vpamrit/vpamrit.github.io</replace>
@@ -170,12 +190,12 @@
       <list>
         <option value="$PROJECT_DIR$/intro.js" />
         <option value="$PROJECT_DIR$/carousel.js" />
-        <option value="$PROJECT_DIR$/onResize.js" />
         <option value="$PROJECT_DIR$/floatingarrow.js" />
         <option value="$PROJECT_DIR$/generalsettings.css" />
-        <option value="$PROJECT_DIR$/LaptopSize.css" />
-        <option value="$PROJECT_DIR$/TabletSize.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/onResize.js" />
+        <option value="$PROJECT_DIR$/TabletSize.css" />
+        <option value="$PROJECT_DIR$/LaptopSize.css" />
         <option value="$PROJECT_DIR$/PhoneSize.css" />
       </list>
     </option>
@@ -342,12 +362,12 @@
       <workItem from="1502015125455" duration="22734000" />
       <workItem from="1502045083176" duration="936000" />
       <workItem from="1502046791643" duration="357000" />
-      <workItem from="1502096483236" duration="9110000" />
+      <workItem from="1502096483236" duration="11055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39072000" />
+    <option name="totallyTimeSpent" value="41017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -413,9 +433,9 @@
         <state relative-caret-position="154">
           <caret line="192" column="82" lean-forward="false" selection-start-line="192" selection-start-column="82" selection-end-line="192" selection-end-column="82" />
           <folding>
-            <element signature="e#4415#4671#0" expanded="false" />
-            <element signature="e#4673#5569#0" expanded="false" />
-            <element signature="e#5571#6461#0" expanded="false" />
+            <element signature="e#4427#4683#0" expanded="false" />
+            <element signature="e#4685#5581#0" expanded="false" />
+            <element signature="e#5583#6473#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -425,9 +445,9 @@
         <state relative-caret-position="2288">
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
-            <element signature="e#4484#4696#0" expanded="false" />
-            <element signature="e#4698#4961#0" expanded="false" />
-            <element signature="e#4964#5219#0" expanded="false" />
+            <element signature="e#4496#4708#0" expanded="false" />
+            <element signature="e#4710#4973#0" expanded="false" />
+            <element signature="e#4976#5231#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -515,9 +535,9 @@
         <state relative-caret-position="4224">
           <caret line="192" column="82" lean-forward="false" selection-start-line="192" selection-start-column="82" selection-end-line="192" selection-end-column="82" />
           <folding>
-            <element signature="e#4415#4671#0" expanded="false" />
-            <element signature="e#4673#5569#0" expanded="false" />
-            <element signature="e#5571#6461#0" expanded="false" />
+            <element signature="e#4427#4683#0" expanded="false" />
+            <element signature="e#4685#5581#0" expanded="false" />
+            <element signature="e#5583#6473#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -527,9 +547,9 @@
         <state relative-caret-position="2288">
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
-            <element signature="e#4484#4696#0" expanded="false" />
-            <element signature="e#4698#4961#0" expanded="false" />
-            <element signature="e#4964#5219#0" expanded="false" />
+            <element signature="e#4496#4708#0" expanded="false" />
+            <element signature="e#4710#4973#0" expanded="false" />
+            <element signature="e#4976#5231#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -617,9 +637,9 @@
         <state relative-caret-position="4224">
           <caret line="192" column="82" lean-forward="true" selection-start-line="192" selection-start-column="82" selection-end-line="192" selection-end-column="82" />
           <folding>
-            <element signature="e#4415#4671#0" expanded="false" />
-            <element signature="e#4673#5569#0" expanded="false" />
-            <element signature="e#5571#6461#0" expanded="false" />
+            <element signature="e#4427#4683#0" expanded="false" />
+            <element signature="e#4685#5581#0" expanded="false" />
+            <element signature="e#5583#6473#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -629,9 +649,9 @@
         <state relative-caret-position="2288">
           <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
-            <element signature="e#4484#4696#0" expanded="false" />
-            <element signature="e#4698#4961#0" expanded="false" />
-            <element signature="e#4964#5219#0" expanded="false" />
+            <element signature="e#4496#4708#0" expanded="false" />
+            <element signature="e#4710#4973#0" expanded="false" />
+            <element signature="e#4976#5231#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -820,53 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/onResize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopSize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="e#4484#4696#0" expanded="false" />
-            <element signature="e#4698#4961#0" expanded="false" />
-            <element signature="e#4964#5219#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TabletSize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="239" column="26" lean-forward="false" selection-start-line="239" selection-start-column="16" selection-end-line="239" selection-end-column="26" />
-          <folding>
-            <element signature="e#4415#4671#0" expanded="false" />
-            <element signature="e#4673#5569#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generalsettings.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="216" column="17" lean-forward="false" selection-start-line="216" selection-start-column="16" selection-end-line="216" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PhoneSize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7568">
-          <caret line="344" column="43" lean-forward="true" selection-start-line="344" selection-start-column="43" selection-end-line="344" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -890,6 +863,54 @@
             <element signature="n#script#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onResize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TabletSize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding>
+            <element signature="e#4427#4683#0" expanded="false" />
+            <element signature="e#4685#5581#0" expanded="false" />
+            <element signature="e#5583#6473#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopSize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding>
+            <element signature="e#4496#4708#0" expanded="false" />
+            <element signature="e#4710#4973#0" expanded="false" />
+            <element signature="e#4976#5231#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generalsettings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="62" column="15" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PhoneSize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

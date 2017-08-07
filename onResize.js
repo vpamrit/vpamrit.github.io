@@ -2,8 +2,16 @@
  * Created by vishn on 7/28/2017.
  */
 
+$(window).on("orientationchange",function(){
+    alert("The orientation has changed!");
+    $('#body').addClass('preload');
+    onResize();
+    $('#body').removeClass('preload');
+});
+
 
 $(window).resize(function(){
+    alert("Resize has changed!");
     $('#body').addClass('preload');
     onResize();
     $('#body').removeClass('preload');
