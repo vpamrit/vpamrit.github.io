@@ -7,6 +7,12 @@ $(document).ready(function(){
 
 $(function(){ /* to make sure the script runs after page load */
     $(window).scrollTop(0);
+    $(document).bind(
+        'touchmove',
+        function(e) {
+            e.preventDefault();
+        }
+    );
     $("#body").removeClass("preload");
 
     $('#toknowledge').css({position: 'fixed', left: $(window).innerWidth()/2 - arrow.outerWidth()/2, bottom: '5vh'});
