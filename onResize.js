@@ -13,7 +13,7 @@ $(window).bind('center', function(){
         var el = $(document.getElementsByClassName("centered")[0]);
         var elOffset = el.offset().top;
         var elHeight = el.height();
-        var windowHeight = $(window).height();
+        var windowHeight = $(window).innerHeight();
         var offset;
 
         if (elHeight < windowHeight) {
