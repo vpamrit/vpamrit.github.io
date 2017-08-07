@@ -13,6 +13,14 @@ $(function(){ /* to make sure the script runs after page load */
             e.preventDefault();
         }
     );
+
+    $('.box').each(function() {
+        $(this).addClass('scrollable');
+    });
+
+    $('body').on('touchmove','.scrollable',function(e) {
+        e.stopPropagation();
+    });
     $("#body").removeClass("preload");
 
     $('#toknowledge').css({position: 'fixed', left: $(window).innerWidth()/2 - arrow.outerWidth()/2, bottom: '5vh'});
