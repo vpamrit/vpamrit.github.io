@@ -58,6 +58,8 @@
         top: 150%;
         right: 15vw;
         overflow: auto;
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
         transform: scale(1.0);
         transition: all 1s ease;
     }
@@ -67,6 +69,8 @@
         position: absolute;
         overflow: hidden;
         top: 150%;
+        -webkit-transform: scale(0.3) translateX(100%);
+        -ms-transform: scale(0.3) translateX(100%);
         transform: scale(0.3) translateX(100%);
         right: -35vw;
         visibility: hidden;
@@ -77,6 +81,8 @@
         position: absolute;
         overflow: hidden;
         top: 150%;
+        -webkit-transform: scale(0.3) translateX(-100%);
+        -ms-transform: scale(0.3) translateX(-100%);
         transform: scale(0.3) translateX(-100%);
         right: 80vw;
         visibility: hidden;
@@ -174,6 +180,8 @@
         visibility: visible;
         overflow: hidden;
         top: 150%;
+        -webkit-transform: scale(0.3);
+        -ms-transform: scale(0.3);
         transform: scale(0.3);
         right: -42vw;
         transition: all 1s ease;
@@ -185,6 +193,8 @@
         top: 150%;
         right: 72vw;
         overflow: hidden;
+        -webkit-transform: scale(0.3);
+        -ms-transform: scale(0.3);
         transform: scale(0.3);
         transition: all 1s ease;
     }
@@ -196,6 +206,8 @@
         visibility: hidden;
         overflow: hidden;
         top: 150%;
+        -webkit-transform: scale(0.3);
+        -ms-transform: scale(0.3);
         transform: scale(0.3);
         right: -48vw;
         transition: all 1s ease;
@@ -207,6 +219,8 @@
         top: 150%;
         right: 78vw;
         overflow: hidden;
+        -webkit-transform: scale(0.3);
+        -ms-transform: scale(0.3);
         transform: scale(0.3);
         transition: all 1s ease;
     }

@@ -17,13 +17,6 @@
         -o-transition: none !important;
     }
 
-    .load *{
-        -webkit-transition: all !important;
-        -moz-transition: all !important;
-        -ms-transition: all !important;
-        -o-transition: all !important;
-    }
-
     #wrapper {
         min-width: 400px;
         min-height: 400px;
@@ -200,6 +193,8 @@
         top: 50vh;
         left: 50vw;
         color: white;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 
@@ -219,11 +214,19 @@
         background-size: 100%;
         z-index: 11;
         opacity: 0.4;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
         transition: opacity 1s ease-in-out;
     }
 
     #left:hover {
         opacity: 1.0;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
         transition: opacity .55s ease-in-out;
     }
 
@@ -237,11 +240,19 @@
         background-size: 100%;
         z-index: 11;
         opacity: 0.4;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
         transition: opacity 1s ease-in-out;
     }
 
     #right:hover {
         opacity: 1.0;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
         transition: opacity .55s ease-in-out;
     }
 
@@ -326,6 +337,8 @@
         color: white;
         border: solid firebrick 2px;
         border-radius: 10px;
+        -webkit-transform: translateX(-20%) translateY(50%) scale(1.1);
+        -ms-transform: translateX(-20%) translateY(50%) scale(1.1);
         transform: translateX(-20%) translateY(50%) scale(1.1);
         z-index: 20;
     }
@@ -333,6 +346,8 @@
 
     #resume:hover {
         color: firebrick;
+        -webkit-transform: translateX(-20%) translateY(50%) scale(1.2);
+        -ms-transform: translateX(-20%) translateY(50%) scale(1.2);
         transform: translateX(-20%) translateY(50%) scale(1.2);
     }
 
@@ -344,6 +359,8 @@
         color: white;
         border: solid whitesmoke 2px;
         border-radius: 10px;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         transform: scale(1.1);
     }
 
@@ -351,6 +368,8 @@
     #resume2:hover {
         color: firebrick;
         border: solid firebrick 2px;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
         transform: scale(1.2);
     }
 
@@ -363,6 +382,10 @@
         height: 30px;
         overflow: hidden;
         text-align: center;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
         transition: width 1s ease-in-out;
     }
 
