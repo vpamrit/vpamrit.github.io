@@ -482,9 +482,11 @@
     }
 
     html {
+        position: fixed;
         background: transparent;
         background-size: 100% auto;
         height:100%;
+        width: 100%;
         overflow: hidden;
         -webkit-overflow-scrolling: touch;
     }
