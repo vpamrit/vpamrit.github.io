@@ -102,9 +102,9 @@
         transition: all 1s ease;
     }
 
-    /*#dropbutton {*/
-        /*display: none;*/
-    /*}*/
+    #dropbutton {
+        display: none;
+    }
 
     #menubar nav {
         left: 0;
@@ -125,6 +125,7 @@
         display: block;
         white-space: nowrap;
         list-style: none;
+        text-align: center;
         height: 100%;
         padding: 0;
         font-size: calc(18px + 0.2vh);
@@ -134,7 +135,7 @@
 
     #menubar ul li {
         padding: 0;
-        display: inline-table;
+        display: inline-block !important;
         height: 95%;
         min-width: 10px;
         width: 15%;
@@ -180,7 +181,7 @@
 }
 
 /*Sub-sizes */
-@media only screen and (max-width: 1200px) and (min-width : 1180px) and (min-height: 450px){
+@media only screen and (min-width : 1180px) and (max-width: 1200px) and (min-height: 450px){
     .portrait-image {
         min-width: 200px;
     }
@@ -189,7 +190,7 @@
     }
 }
 
-@media only screen and (max-width: 1200px) and (min-width : 1180px) and (min-height: 450px) and (min-width: 1250px){
+@media only screen and (min-height: 450px) and (min-width: 1250px){
     .portrait-image {
         min-width: 220px;
         max-width: 260px;
@@ -201,7 +202,7 @@
 }
 
 
-@media only screen and (max-width: 1200px) and (min-width : 1180px) and (min-height: 450px) and  (min-width: 1450px){
+@media only screen and (min-height: 450px) and  (min-width: 1450px){
     .portrait-image {
         width: auto;
         height: auto;

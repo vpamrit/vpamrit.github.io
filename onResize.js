@@ -2,12 +2,12 @@
  * Created by vishn on 7/28/2017.
  */
 
-$(window).on("orientationchange",function(){
-    alert("The orientation has changed!");
-    $('#body').addClass('preload');
-    onResize();
-    $('#body').removeClass('preload');
-});
+// $(window).on("orientationchange",function(){
+//     alert("The orientation has changed!");
+//     $('#body').addClass('preload');
+//     onResize();
+//     $('#body').removeClass('preload');
+// });
 
 $(window).bind('center', function(){
         var el = $(document.getElementsByClassName("centered")[0]);
@@ -28,7 +28,7 @@ $(window).bind('center', function(){
 
 
 $(window).resize(function(){
-    alert("Resize has changed!");
+    // alert("Resize has changed!");
     $('#body').addClass('preload');
     onResize();
     $('#body').removeClass('preload');
@@ -95,12 +95,12 @@ function onResize() {
     }
 
     if(scrolledDown) {
-        var element = document.getElementsByClassName("centered")[0];
-        // $('html, body').css({scrollTop: $(element).scrollTop() - ($(window).height() - $(element).outerHeight(true)) / 2});
-        $(window).trigger('center');
         var nav = $("#navigation");
         var left = ($(window).innerWidth() - nav[0].offsetWidth) / 2;
         nav.animate({right: left + 'px'}, 50);
+        // var element = document.getElementsByClassName("centered")[0];
+        // $('html, body').css({scrollTop: $(element).scrollTop() - ($(window).height() - $(element).outerHeight(true)) / 2});
+        $(window).trigger('center');
 
         if($(window).innerWidth() < 1150) {
             $("#portrait").find('.read_less').click();
