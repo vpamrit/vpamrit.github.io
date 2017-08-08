@@ -125,6 +125,11 @@
         transition: width 1s ease-in-out;
     }
 
+    .middle-of-div {
+        height: 100%;
+    }
+
+
     #menubar nav ul {
         display: block;
         white-space: nowrap;
