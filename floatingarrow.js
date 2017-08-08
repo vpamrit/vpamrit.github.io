@@ -7,43 +7,43 @@ $(document).ready(function(){
 
 $(function(){ /* to make sure the script runs after page load */
     $(window).scrollTop(0);
-    $(document).bind(
-        'touchmove',
-        function(e) {
-            e.preventDefault();
-        }
-    );
-
-    // $('.box').each(function() {
-    //     $(this).addClass('scrollable');
-    // });
-
-    $('body').on('touchmove','.box',function(e) {
-        e.stopPropagation();
-    });
-    //
-    // $(document).on('touchmove',function(e){
-    //     e.preventDefault();
-    // });
-    //
-    // $('body').on('touchstart','.box',function(e) {
-    //
-    //     // Only execute the below code once at a time
-    //     if (!scrolling) {
-    //         scrolling = true;
-    //         if (e.currentTarget.scrollTop === 0) {
-    //             e.currentTarget.scrollTop = 1;
-    //         } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
-    //             e.currentTarget.scrollTop -= 1;
-    //         }
-    //         scrolling = false;
+    // $(document).bind(
+    //     'touchmove',
+    //     function(e) {
+    //         e.preventDefault();
     //     }
-    // });
+    // );
     //
-    // // Prevents preventDefault from being called on document if it sees a scrollable div
+    // // $('.box').each(function() {
+    // //     $(this).addClass('scrollable');
+    // // });
+    //
     // $('body').on('touchmove','.box',function(e) {
     //     e.stopPropagation();
     // });
+    //
+    $(document).on('touchmove',function(e){
+        e.preventDefault();
+    });
+
+    $('body').on('touchstart','.box',function(e) {
+
+        // Only execute the below code once at a time
+        if (!isScrolling) {
+            isScrolling = true;
+            if (e.currentTarget.scrollTop === 0) {
+                e.currentTarget.scrollTop = 1;
+            } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
+                e.currentTarget.scrollTop -= 1;
+            }
+            isScrolling = false;
+        }
+    });
+
+    // Prevents preventDefault from being called on document if it sees a scrollable div
+    $('body').on('touchmove','.box',function(e) {
+        e.stopPropagation();
+    });
 
     $("#body").removeClass("preload");
 

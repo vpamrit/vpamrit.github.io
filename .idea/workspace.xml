@@ -24,7 +24,7 @@
       <file leaf-file-name="generalsettings.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generalsettings.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7282">
+            <state relative-caret-position="-276">
               <caret line="331" column="30" lean-forward="true" selection-start-line="331" selection-start-column="30" selection-end-line="331" selection-end-column="30" />
               <folding>
                 <element signature="e#7852#8097#0" expanded="false" />
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="floatingarrow.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="floatingarrow.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/floatingarrow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="270">
+              <caret line="42" column="80" lean-forward="false" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -100,7 +100,7 @@
       <file leaf-file-name="onResize.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/onResize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
+            <state relative-caret-position="2222">
               <caret line="101" column="72" lean-forward="false" selection-start-line="101" selection-start-column="72" selection-end-line="101" selection-end-column="72" />
               <folding />
             </state>
@@ -129,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="87" column="51" lean-forward="true" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
+            <state relative-caret-position="310">
+              <caret line="382" column="32" lean-forward="true" selection-start-line="382" selection-start-column="32" selection-end-line="382" selection-end-column="32" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -152,7 +152,7 @@
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1502188034631" expanded="false" signature="3637:3678" ph="..." />
+                <marker date="1502188355212" expanded="false" signature="3637:3678" ph="..." />
               </folding>
             </state>
           </provider>
@@ -162,7 +162,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>transition: all</find>
       <find>leftside</find>
       <find>opacity</find>
       <find>width</find>
@@ -192,6 +191,7 @@
       <find>row</find>
       <find>nav ul</find>
       <find>nav</find>
+      <find>scrolling</find>
     </findStrings>
     <replaceStrings>
       <replace>https://github.com/vpamrit/vpamrit.github.io</replace>
@@ -210,8 +210,8 @@
         <option value="$PROJECT_DIR$/LaptopSize.css" />
         <option value="$PROJECT_DIR$/generalsettings.css" />
         <option value="$PROJECT_DIR$/TabletSize.css" />
-        <option value="$PROJECT_DIR$/floatingarrow.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/floatingarrow.js" />
       </list>
     </option>
   </component>
@@ -379,12 +379,12 @@
       <workItem from="1502046791643" duration="357000" />
       <workItem from="1502096483236" duration="16165000" />
       <workItem from="1502135361074" duration="42000" />
-      <workItem from="1502164529519" duration="14592000" />
+      <workItem from="1502164529519" duration="14924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60761000" />
+    <option name="totallyTimeSpent" value="61093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -517,7 +517,7 @@
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1502188034631" expanded="false" signature="3637:3678" ph="..." />
+            <marker date="1502188355212" expanded="false" signature="3637:3678" ph="..." />
           </folding>
         </state>
       </provider>
@@ -636,7 +636,7 @@
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1502188034631" expanded="false" signature="3637:3678" ph="..." />
+            <marker date="1502188355212" expanded="false" signature="3637:3678" ph="..." />
           </folding>
         </state>
       </provider>
@@ -755,7 +755,7 @@
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1502188034631" expanded="false" signature="3637:3678" ph="..." />
+            <marker date="1502188355212" expanded="false" signature="3637:3678" ph="..." />
           </folding>
         </state>
       </provider>
@@ -874,7 +874,7 @@
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1502188034631" expanded="false" signature="3637:3678" ph="..." />
+            <marker date="1502188355212" expanded="false" signature="3637:3678" ph="..." />
           </folding>
         </state>
       </provider>
@@ -965,7 +965,7 @@
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1502188034631" expanded="false" signature="3637:3678" ph="..." />
+            <marker date="1502188355212" expanded="false" signature="3637:3678" ph="..." />
           </folding>
         </state>
       </provider>
@@ -977,14 +977,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onResize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="101" column="72" lean-forward="false" selection-start-line="101" selection-start-column="72" selection-end-line="101" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,16 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/floatingarrow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PhoneSize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1030,9 +1012,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopSize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#4573#4785#0" expanded="false" />
+            <element signature="e#4787#5001#0" expanded="false" />
+            <element signature="e#5004#5210#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onResize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2222">
+          <caret line="101" column="72" lean-forward="false" selection-start-line="101" selection-start-column="72" selection-end-line="101" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/generalsettings.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7282">
+        <state relative-caret-position="-276">
           <caret line="331" column="30" lean-forward="true" selection-start-line="331" selection-start-column="30" selection-end-line="331" selection-end-column="30" />
           <folding>
             <element signature="e#7852#8097#0" expanded="false" />
@@ -1050,22 +1052,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopSize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#4573#4785#0" expanded="false" />
-            <element signature="e#4787#5001#0" expanded="false" />
-            <element signature="e#5004#5210#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="87" column="51" lean-forward="true" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
+        <state relative-caret-position="310">
+          <caret line="382" column="32" lean-forward="true" selection-start-line="382" selection-start-column="32" selection-end-line="382" selection-end-column="32" />
           <folding>
             <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1084,7 +1074,17 @@
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1502188034631" expanded="false" signature="3637:3678" ph="..." />
+            <marker date="1502188355212" expanded="false" signature="3637:3678" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/floatingarrow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="42" column="80" lean-forward="false" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
