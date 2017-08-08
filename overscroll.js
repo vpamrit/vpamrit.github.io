@@ -15,7 +15,7 @@
         while ((window.getComputedStyle(obj_x)['overflow-x'] != "auto" && window.getComputedStyle(obj_x)['overflow-x'] != "scroll") || obj_x.parentNode == null) {
             obj_x = obj_x.parentNode
         }
-        while ((window.getComputedStyle(obj_y)['overflow-y'] != "auto" && window.getComputedStyle(obj_y)['overflow-y'] != "auto") || obj_y.parentNode == null) {
+        while ((window.getComputedStyle(obj_y)['overflow-y'] != "auto" && window.getComputedStyle(obj_y)['overflow-y'] != "scroll") || obj_y.parentNode == null) {
             obj_y = obj_y.parentNode
         }
         // Get if no scrollable parents are present set null
