@@ -17,8 +17,9 @@
         -o-transition: none !important;
     }
 
-    .min_height {
-        min-height: min-content !important;
+    #wrapper {
+        min-width: 400px;
+        min-height: 400px;
     }
 
     .box {
@@ -325,7 +326,7 @@
         position: relative;
         width: 100%;
         height: 100%;
-        min-height: min-content !important;
+        min-height: min-content;
         display: flex;
         overflow-y: visible !important;
         display: -webkit-flex;
