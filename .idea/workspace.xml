@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="333c55e1-18f1-4f72-a677-7df0107dd73a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/floatingarrow.js" afterPath="$PROJECT_DIR$/floatingarrow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +20,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="generalsettings.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="generalsettings.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generalsettings.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-276">
@@ -85,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="floatingarrow.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="floatingarrow.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/floatingarrow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="42" column="80" lean-forward="false" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
+            <state relative-caret-position="454">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -379,12 +378,12 @@
       <workItem from="1502046791643" duration="357000" />
       <workItem from="1502096483236" duration="16165000" />
       <workItem from="1502135361074" duration="42000" />
-      <workItem from="1502164529519" duration="14924000" />
+      <workItem from="1502164529519" duration="15596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61093000" />
+    <option name="totallyTimeSpent" value="61765000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1032,26 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generalsettings.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="331" column="30" lean-forward="true" selection-start-line="331" selection-start-column="30" selection-end-line="331" selection-end-column="30" />
-          <folding>
-            <element signature="e#7852#8097#0" expanded="false" />
-            <element signature="e#8111#8363#0" expanded="false" />
-            <element signature="e#8378#8902#0" expanded="false" />
-            <element signature="e#8923#9160#0" expanded="false" />
-            <element signature="e#9175#9494#0" expanded="false" />
-            <element signature="e#9516#9691#0" expanded="false" />
-            <element signature="e#9709#10162#0" expanded="false" />
-            <element signature="e#10183#10310#0" expanded="false" />
-            <element signature="e#10330#10448#0" expanded="false" />
-            <element signature="e#10477#10669#0" expanded="false" />
-            <element signature="e#10675#11942#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -1081,10 +1060,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/floatingarrow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="42" column="80" lean-forward="false" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
+        <state relative-caret-position="454">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generalsettings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <caret line="331" column="30" lean-forward="true" selection-start-line="331" selection-start-column="30" selection-end-line="331" selection-end-column="30" />
+          <folding>
+            <element signature="e#7852#8097#0" expanded="false" />
+            <element signature="e#8111#8363#0" expanded="false" />
+            <element signature="e#8378#8902#0" expanded="false" />
+            <element signature="e#8923#9160#0" expanded="false" />
+            <element signature="e#9175#9494#0" expanded="false" />
+            <element signature="e#9516#9691#0" expanded="false" />
+            <element signature="e#9709#10162#0" expanded="false" />
+            <element signature="e#10183#10310#0" expanded="false" />
+            <element signature="e#10330#10448#0" expanded="false" />
+            <element signature="e#10477#10669#0" expanded="false" />
+            <element signature="e#10675#11942#0" expanded="false" />
           </folding>
         </state>
       </provider>
