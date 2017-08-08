@@ -9,10 +9,6 @@
         display: table-cell !important;
     }
 
-    body {
-        height: 80vw !important;
-    }
-
     #botbar nav {
         background-color: rgba(0, 0, 0, 1);
         padding-bottom: 10px;

@@ -459,39 +459,41 @@
 
 @media (max-width: 1024px){
     #bg {
-        visibility: visible;
-        position: fixed;
-        top: 0;
-        left: 0;
+        visibility: hidden;
+        /*visibility: visible;*/
+        /*position: fixed;*/
+        /*top: 0;*/
+        /*left: 0;*/
 
-        /* Preserve aspect ratio */
-        /*width: 100vw;*/
-        /*min-height: 100%;*/
-        -webkit-backface-visibility: hidden;
-
-        background: url(images/artist2.jpg);
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        background-position: center center;
-        background-repeat: no-repeat;
-        z-index: -50;
+        /*background: url(images/artist2.jpg);*/
+        /*background-size: cover;*/
+        /*-webkit-background-size: cover;*/
+        /*-moz-background-size: cover;*/
+        /*-o-background-size: cover;*/
+        /*height: 100%;*/
+        /*width: 100%;*/
+        /*position: fixed;*/
+        /*background-position: center center;*/
+        /*background-repeat: no-repeat;*/
+        /*z-index: -50;*/
     }
 
-    html {
-        position: fixed;
-        border: red dashed 2px;
-        background: transparent;
-        height:100% !important;
-        width: 100%;
-        overflow: hidden;
-        z-index: -5000;
-        /*-webkit-overflow-scrolling: touch;*/
-    }
+    /*html {*/
+        /*position: fixed;*/
+        /*background: url(images/artist2.jpg);*/
+        /*-webkit-background-size: cover;*/
+        /*-moz-background-size: cover;*/
+        /*-o-background-size: cover;*/
+        /*background-position: center center;*/
+        /*background-repeat: no-repeat;*/
+        /*height: 100%;*/
+        /*width: 100%;*/
+        /*border: red dashed 2px;*/
+        /*background: transparent;*/
+        /*overflow: hidden;*/
+        /*z-index: -5000;*/
+        /*!*-webkit-overflow-scrolling: touch;*!*/
+    /*}*/
 
 
 
