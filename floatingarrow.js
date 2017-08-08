@@ -6,7 +6,6 @@ $(document).ready(function(){
 });
 
 $(function(){ /* to make sure the script runs after page load */
-    $(window).scrollTop(0);
     // $(document).bind(
     //     'touchmove',
     //     function(e) {
@@ -132,18 +131,23 @@ $("#toknowledge").click(function() {
 
 $(window).bind('scrollDown', function () {
     var element = document.getElementsByClassName("centered")[0];
+    var shift = ($(window).height() - $(element).outerHeight(true)) / 2;
+    var speed = 2000;
+
+    $('#centertext').animate({top: $('#centertext').offset().top - $(element).offset().top + shift}, speed);
+
     $("#toknowledge").animate({opacity: 0}, 100);
-    $('html, body').animate({
-            scrollTop: $(element).offset().top - ($(window).height() - $(element).outerHeight(true)) / 2
-        },
-        2000,
-        function () {
-            complete = 0;
-            popinmenu();
-            $('#intro').hide();
-            $("#left").css({visibility: 'visible'});
-            $("#right").css({visibility: 'visible'});
-        });
+    $('#body').find('.box').each(function(){
+        $(this).animate({top: shift}, speed);
+    });
+
+    setTimeout(function(){
+        complete = 0;
+        popinmenu();
+        // $('#intro').hide();
+        $("#left").css({visibility: 'visible'});
+        $("#right").css({visibility: 'visible'});
+    }, 2100);
 });
 
 function popinmenu(){

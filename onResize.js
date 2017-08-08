@@ -11,19 +11,30 @@
 
 $(window).bind('center', function(){
         var el = $(document.getElementsByClassName("centered")[0]);
-        var elOffset = el.offset().top;
-        var elHeight = el.height();
-        var windowHeight = $(window).innerHeight();
-        var offset;
+        el.css({top: ($(window).height() - $(el).outerHeight(true)) / 2});
 
-        if (elHeight < windowHeight) {
-            offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
-        }
-        else {
-            offset = elOffset;
-        }
-        var speed = 20;
-        $('html, body').animate({scrollTop:offset}, speed);
+    $('#body').find('.box').each(function(){
+        $(this).css({top: el.offset().top});
+    });
+
+    $('#body').find('.box').each(function(){
+        // if($(this).outerWidth(true) > 800) {
+        //     $(this).css({width: 800+'px'});
+        //     $(this).css({right: ($(window).innerWidth() - $(this).outerWidth(true)) / 2});
+        // }
+        // if($(this).outerHeight(true) > 400) {
+        //     $(this).css({height: 400+'px'});
+        //     $(this).css({top: ($(window).innerHeight() - $(this).outerHeight(true)) / 2});
+        // }
+    });
+
+
+    //
+    // el = $(document.getElementsByClassName("centered")[0]);
+    //
+    // $('#body').find('.box').each(function(){
+    //     $(this).css({top: (el.offset().top)});
+    // });
 });
 
 
@@ -31,6 +42,9 @@ $(window).resize(function(){
     // alert("Resize has changed!");
     $('#body').addClass('preload');
     onResize();
+    if(scrolledDown) {
+        $(window).trigger('center');
+    }
     $('#body').removeClass('preload');
 });
 
@@ -100,7 +114,6 @@ function onResize() {
         nav.animate({right: left + 'px'}, 50);
         // var element = document.getElementsByClassName("centered")[0];
         // $('html, body').css({scrollTop: $(element).scrollTop() - ($(window).height() - $(element).outerHeight(true)) / 2});
-        $(window).trigger('center');
 
         if($(window).innerWidth() < 1150) {
             $("#portrait").find('.read_less').click();

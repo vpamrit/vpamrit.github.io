@@ -59,11 +59,10 @@
     }
 
     .centered {
-        position: absolute;
+        position: fixed;
         visibility: visible;
         top: 150%;
         right: 15vw;
-        overflow: auto;
         -webkit-transform: scale(1.0);
         -ms-transform: scale(1.0);
         transform: scale(1.0);
@@ -75,7 +74,7 @@
 
 
     .routside {
-        position: absolute;
+        position: fixed;
         overflow: hidden;
         top: 150%;
         -webkit-transform: scale(0.3) translateX(100%);
@@ -90,7 +89,7 @@
     }
 
     .loutside {
-        position: absolute;
+        position: fixed;
         overflow: hidden;
         top: 150%;
         -webkit-transform: scale(0.3) translateX(-100%);
@@ -203,7 +202,7 @@
 
 @media only screen and  (min-width: 850px) and (max-width : 1180px) and (min-height: 450px) {
     .rightside {
-        position: absolute;
+        position: fixed;
         visibility: visible;
         overflow: hidden;
         top: 150%;
@@ -218,7 +217,7 @@
     }
 
     .leftside {
-        position: absolute;
+        position: fixed;
         visibility: visible;
         top: 150%;
         right: 72vw;
@@ -235,7 +234,7 @@
 
 @media only screen and (min-width: 601px) and (max-width: 850px) and (min-height: 450px){
     .rightside {
-        position: absolute;
+        position: fixed;
         visibility: hidden;
         overflow: hidden;
         top: 150%;
@@ -250,7 +249,7 @@
     }
 
     .leftside {
-        position: absolute;
+        position: fixed;
         visibility: hidden;
         top: 150%;
         right: 78vw;
