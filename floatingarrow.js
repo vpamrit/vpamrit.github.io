@@ -7,20 +7,20 @@ $(document).ready(function(){
 
 $(function(){ /* to make sure the script runs after page load */
     $(window).scrollTop(0);
-    // $(document).bind(
-    //     'touchmove',
-    //     function(e) {
-    //         e.preventDefault();
-    //     }
-    // );
-    //
-    // $('.box').each(function() {
-    //     $(this).addClass('scrollable');
-    // });
-    //
-    // $('body').on('touchmove','.scrollable',function(e) {
-    //     e.stopPropagation();
-    // });
+    $(document).bind(
+        'touchmove',
+        function(e) {
+            e.preventDefault();
+        }
+    );
+
+    $('.box').each(function() {
+        $(this).addClass('scrollable');
+    });
+
+    $('body').on('touchmove','.scrollable',function(e) {
+        e.stopPropagation();
+    });
 
     $("#body").removeClass("preload");
 
