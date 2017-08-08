@@ -17,9 +17,8 @@
         -o-transition: none !important;
     }
 
-    #wrapper {
-        min-width: 400px;
-        min-height: 400px;
+    .min_height {
+        min-height: min-content !important;
     }
 
     .box {
