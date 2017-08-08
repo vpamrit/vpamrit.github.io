@@ -14,11 +14,11 @@ $(function(){ /* to make sure the script runs after page load */
         }
     );
 
-    $('.box').each(function() {
-        $(this).addClass('scrollable');
-    });
+    // $('.box').each(function() {
+    //     $(this).addClass('scrollable');
+    // });
 
-    $('body').on('touchmove','.scrollable',function(e) {
+    $('body').on('touchmove','.box',function(e) {
         e.stopPropagation();
     });
 
