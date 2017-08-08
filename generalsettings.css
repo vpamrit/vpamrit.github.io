@@ -193,6 +193,7 @@
     }
 
     body {
+        border: blue solid 2px;
         position: fixed;
         background-color: transparent;
         background-size: cover;
@@ -483,7 +484,8 @@
 
     html {
         position: fixed;
-        /*background: transparent;*/
+        border: red dashed 2px;
+        background: transparent;
         /*background-size: 100% auto;*/
         height:100% !important;
         width: 100%;
