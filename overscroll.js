@@ -37,8 +37,8 @@
 
         // Scroll according to movement
         var touch = e.touches[0];
-        obj_x.scrollLeft = obj_x.scrollLeft - (touch.pageX - touch_x)
-        obj_y.scrollTop = obj_y.scrollTop - (touch.pageY - touch_y)
+        obj_x.scrollLeft = obj_x.scrollLeft - (touch.pageX - touch_x);
+        obj_y.scrollTop = obj_y.scrollTop - (touch.pageY - touch_y);
 
         // Set speed speed
         speed_x = (touch.pageX - touch_x)
@@ -56,8 +56,8 @@
 
         // Animate
         scrollanim = setInterval(function() {
-            obj_x.scrollLeft = obj_x.scrollLeft - speed_x
-            obj_y.scrollTop = obj_y.scrollTop - speed_y
+            obj_x.scrollLeft = obj_x.scrollLeft - speed_x;
+            obj_y.scrollTop = obj_y.scrollTop - speed_y;
             // Decelerate
             speed_x = speed_x * 0.9;
             speed_y = speed_y * 0.9;

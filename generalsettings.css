@@ -200,7 +200,7 @@
         width: 100vw;
         font-family: Avenir;
         font-size: calc(12px + 0.2vw);
-        overflow: hidden;
+        overflow: hidden !important;
         /*font-family: "Frutiger Next LT W1G";*/
     }
 
