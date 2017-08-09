@@ -21,29 +21,29 @@ $(function(){ /* to make sure the script runs after page load */
     //     e.stopPropagation();
     // });
     //
-//
-//     var selScrollable = '.box';
-// // Uses document because document will be topmost level in bubbling
-//     $(document).on('touchmove',function(e){
-//         e.preventDefault();
-//     });
-// // Uses body because jQuery on events are called off of the element they are
-// // added to, so bubbling would not work if we used document instead.
-//     $('body').on('touchstart', selScrollable, function(e) {
-//         if (e.currentTarget.scrollTop === 0) {
-//             e.currentTarget.scrollTop = 10;
-//         } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
-//             e.currentTarget.scrollTop -= 10;
-//         }
-//     });
-//
-//     $('body').on('touchmove', selScrollable, function(e) {
-//         // Only block default if internal div contents are large enough to scroll
-//         // Warning: scrollHeight support is not universal. (https://stackoverflow.com/a/15033226/40352)
-//         if($($(this).find('.middle-of-div')[0]).innerHeight() > ($(this).innerHeight() + 10)) {
-//             e.stopPropagation();
-//         }
-//     });
+
+    var selScrollable = '.middle-of-div';
+// Uses document because document will be topmost level in bubbling
+    $(document).on('touchmove',function(e){
+        e.preventDefault();
+    });
+// Uses body because jQuery on events are called off of the element they are
+// added to, so bubbling would not work if we used document instead.
+    $('body').on('touchstart', selScrollable, function(e) {
+        if (e.currentTarget.scrollTop === 0) {
+            e.currentTarget.scrollTop = 1;
+        } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
+            e.currentTarget.scrollTop -= 1;
+        }
+    });
+
+    $('body').on('touchmove', selScrollable, function(e) {
+        // Only block default if internal div contents are large enough to scroll
+        // Warning: scrollHeight support is not universal. (https://stackoverflow.com/a/15033226/40352)
+        if($($(this).find('.row')[0]).innerHeight() > ($(this).innerHeight() + 5)) {
+            e.stopPropagation();
+        }
+    });
 
     $("#body").removeClass("preload");
 
