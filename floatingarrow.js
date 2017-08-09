@@ -6,20 +6,20 @@ $(document).ready(function(){
 });
 
 $(function(){ /* to make sure the script runs after page load */
-    $(document).bind(
-        'touchmove',
-        function(e) {
-            e.preventDefault();
-        });
-    //
-    // // $('.box').each(function() {
-    // //     $(this).addClass('scrollable');
-    // // });
-    //
-    $('body').on('touchmove','.box',function(e) {
-        alert('SCROLLING BOX BEETCH');
-        e.stopPropagation();
-    });
+    // $(document).bind(
+    //     'touchmove',
+    //     function(e) {
+    //         e.preventDefault();
+    //     });
+    // //
+    // // // $('.box').each(function() {
+    // // //     $(this).addClass('scrollable');
+    // // // });
+    // //
+    // $('body').on('touchmove','.box',function(e) {
+    //     alert('SCROLLING BOX BEETCH');
+    //     e.stopPropagation();
+    // });
     //
 //
 //     var selScrollable = '.box';
