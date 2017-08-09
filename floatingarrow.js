@@ -56,7 +56,7 @@ $(function(){ /* to make sure the script runs after page load */
         $(this).parents('.text_item').find('.expandable').show(); /* show the .more_text span */
         $(this).parents('.text_item').find('.read_less').show();
         $('#resume2').hide();
-        if($(window).innerHeight() <= 450 || $(window).innerWidth() < 602){
+        if($(window).innerHeight() >= 450 && $(window).innerWidth() > 602){
             $('#resume').show();
         }
 
