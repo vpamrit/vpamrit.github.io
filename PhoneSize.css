@@ -410,9 +410,9 @@ and (max-width: 395px){
         position: fixed;
         overflow: hidden;
         top: 250%;
-        -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-        transform: translateY(100%);
+        -webkit-transform: scale(1.0) translateY(100%);
+        -ms-transform: scale(1.0) translateY(100%);
+        transform: scale(1.0) translateY(100%);
         right: 10vw;
         visibility: hidden;
         -webkit-transition: all 1s ease;
@@ -425,9 +425,9 @@ and (max-width: 395px){
         position: fixed;
         overflow: hidden;
         top: 50%;
-        -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-        transform: translateY(-100%);
+        -webkit-transform: scale(1.0) translateY(-100%);
+        -ms-transform: scale(1.0) translateY(-100%);
+        transform: scale(1.0) translateY(-100%);
         right: 10vw;
         visibility: hidden;
         -webkit-transition: all 1s ease;

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="333c55e1-18f1-4f72-a677-7df0107dd73a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/floatingarrow.js" afterPath="$PROJECT_DIR$/floatingarrow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/overscroll.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PhoneSize.css" afterPath="$PROJECT_DIR$/PhoneSize.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +25,7 @@
       <file leaf-file-name="generalsettings.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generalsettings.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="7766">
               <caret line="387" column="17" lean-forward="false" selection-start-line="387" selection-start-column="17" selection-end-line="387" selection-end-column="17" />
               <folding>
                 <element signature="e#7809#8054#0" expanded="false" />
@@ -45,8 +46,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="379" column="58" lean-forward="false" selection-start-line="379" selection-start-column="58" selection-end-line="379" selection-end-column="58" />
+            <state relative-caret-position="1760">
+              <caret line="363" column="28" lean-forward="true" selection-start-line="363" selection-start-column="28" selection-end-line="363" selection-end-column="28" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -97,12 +98,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhoneSize.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PhoneSize.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PhoneSize.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="295">
+              <caret line="415" column="20" lean-forward="true" selection-start-line="415" selection-start-column="20" selection-end-line="415" selection-end-column="20" />
+              <folding>
+                <element signature="e#8973#9263#0" expanded="false" />
+                <element signature="e#9279#9682#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,7 +125,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="floatingarrow.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="floatingarrow.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/floatingarrow.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
@@ -233,10 +237,10 @@
         <option value="$PROJECT_DIR$/LaptopSize.css" />
         <option value="$PROJECT_DIR$/TabletSize.css" />
         <option value="$PROJECT_DIR$/onResize.js" />
-        <option value="$PROJECT_DIR$/PhoneSize.css" />
         <option value="$PROJECT_DIR$/generalsettings.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/floatingarrow.js" />
+        <option value="$PROJECT_DIR$/PhoneSize.css" />
       </list>
     </option>
   </component>
@@ -378,18 +382,18 @@
       <workItem from="1502135361074" duration="42000" />
       <workItem from="1502164529519" duration="34676000" />
       <workItem from="1502222777403" duration="2778000" />
-      <workItem from="1502247176291" duration="3257000" />
+      <workItem from="1502247176291" duration="4583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86880000" />
+    <option name="totallyTimeSpent" value="88206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13590693" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13590693" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -422,7 +426,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#8973#9263#0" expanded="false" />
+            <element signature="e#9279#9682#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -576,7 +583,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="272" column="19" lean-forward="false" selection-start-line="272" selection-start-column="19" selection-end-line="272" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#8973#9263#0" expanded="false" />
+            <element signature="e#9279#9682#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -711,7 +721,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="272" column="19" lean-forward="false" selection-start-line="272" selection-start-column="19" selection-end-line="272" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#8973#9263#0" expanded="false" />
+            <element signature="e#9279#9682#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -846,7 +859,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="272" column="19" lean-forward="false" selection-start-line="272" selection-start-column="19" selection-end-line="272" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#8973#9263#0" expanded="false" />
+            <element signature="e#9279#9682#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -945,7 +961,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2068">
           <caret line="94" column="15" lean-forward="false" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="e#8973#9263#0" expanded="false" />
+            <element signature="e#9279#9682#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1093,14 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PhoneSize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/onResize.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1109,29 +1120,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generalsettings.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="387" column="17" lean-forward="false" selection-start-line="387" selection-start-column="17" selection-end-line="387" selection-end-column="17" />
-          <folding>
-            <element signature="e#7809#8054#0" expanded="false" />
-            <element signature="e#8068#8320#0" expanded="false" />
-            <element signature="e#8335#8859#0" expanded="false" />
-            <element signature="e#8880#9117#0" expanded="false" />
-            <element signature="e#9132#9451#0" expanded="false" />
-            <element signature="e#9473#9648#0" expanded="false" />
-            <element signature="e#9666#10119#0" expanded="false" />
-            <element signature="e#10140#10267#0" expanded="false" />
-            <element signature="e#10287#10405#0" expanded="false" />
-            <element signature="e#10434#10626#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="379" column="58" lean-forward="false" selection-start-line="379" selection-start-column="58" selection-end-line="379" selection-end-column="58" />
+        <state relative-caret-position="1760">
+          <caret line="363" column="28" lean-forward="true" selection-start-line="363" selection-start-column="28" selection-end-line="363" selection-end-column="28" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1166,6 +1158,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/generalsettings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7766">
+          <caret line="387" column="17" lean-forward="false" selection-start-line="387" selection-start-column="17" selection-end-line="387" selection-end-column="17" />
+          <folding>
+            <element signature="e#7809#8054#0" expanded="false" />
+            <element signature="e#8068#8320#0" expanded="false" />
+            <element signature="e#8335#8859#0" expanded="false" />
+            <element signature="e#8880#9117#0" expanded="false" />
+            <element signature="e#9132#9451#0" expanded="false" />
+            <element signature="e#9473#9648#0" expanded="false" />
+            <element signature="e#9666#10119#0" expanded="false" />
+            <element signature="e#10140#10267#0" expanded="false" />
+            <element signature="e#10287#10405#0" expanded="false" />
+            <element signature="e#10434#10626#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/floatingarrow.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -1181,6 +1192,17 @@
             <element signature="n#!!block;n#popinmenu#0" expanded="false" />
             <element signature="e#6310#6446#0" expanded="false" />
             <element signature="n#!!block;n#runIt#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PhoneSize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="415" column="20" lean-forward="true" selection-start-line="415" selection-start-column="20" selection-end-line="415" selection-end-column="20" />
+          <folding>
+            <element signature="e#8973#9263#0" expanded="false" />
+            <element signature="e#9279#9682#0" expanded="false" />
           </folding>
         </state>
       </provider>
