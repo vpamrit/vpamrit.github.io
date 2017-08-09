@@ -1,9 +1,6 @@
 @media all and (max-width : 601px), (max-height: 450px) {
     /* Styles */
     /* MENU */
-    .middle-of-div {
-        height: min-content !important;
-    }
 
     .hider {
         display: table-cell !important;
