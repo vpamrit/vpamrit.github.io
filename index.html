@@ -2,382 +2,758 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"/>
-    <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"-->
-    <!--integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-    <!--<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap-theme.min.css">-->
-    <link rel="stylesheet" href="generalsettings.css">
-    <link rel="stylesheet" href="PhoneSize.css">
-    <link rel="stylesheet" href="TabletSize.css">
-    <link rel="stylesheet" href="LaptopSize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Pydah - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            overflow-x: hidden;
+            position: relative;
+        }
 
+        /* Animated background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+
+        .bg-animation::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Floating particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            animation: particleFloat 20s linear infinite;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            color: #ffffff;
+            position: relative;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Glowing orbs */
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(40px);
+            animation: pulse 4s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .glow-orb-1 {
+            width: 200px;
+            height: 200px;
+            background: rgba(102, 126, 234, 0.4);
+            top: -50px;
+            right: -50px;
+        }
+
+        .glow-orb-2 {
+            width: 150px;
+            height: 150px;
+            background: rgba(245, 87, 108, 0.4);
+            bottom: -30px;
+            left: -30px;
+            animation-delay: -2s;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 0.4;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.8;
+                transform: scale(1.1);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb, #f5576c);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease infinite, textGlow 2s ease-in-out infinite alternate;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        @keyframes textGlow {
+            from {
+                text-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+            }
+            to {
+                text-shadow: 0 0 30px rgba(245, 87, 108, 0.8), 0 0 40px rgba(102, 126, 234, 0.5);
+            }
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffffff;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #f093fb);
+            border-radius: 2px;
+            animation: expandLine 0.8s ease-out;
+        }
+
+        @keyframes expandLine {
+            from { width: 0; }
+            to { width: 60px; }
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item, .project-item, .education-item {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.8s ease;
+        }
+
+        .experience-item:hover::before {
+            left: 100%;
+        }
+
+        .experience-item:hover, .project-item:hover, .education-item:hover {
+            transform: translateY(-5px) scale(1.02);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .company {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .location {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        .date-range {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            white-space: nowrap;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            }
+            to {
+                box-shadow: 0 5px 25px rgba(102, 126, 234, 0.6);
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.75rem;
+            padding-left: 2rem;
+            position: relative;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #f093fb;
+            font-size: 1.2rem;
+            font-weight: bold;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        ul li:hover {
+            color: #ffffff;
+            transform: translateX(5px);
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(3px); }
+        }
+
+        .summary {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .summary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #667eea, #f093fb, #f5576c);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .tech-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .tech-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-label {
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            display: block;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tech-item {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(245, 87, 108, 0.8));
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            margin: 0.25rem 0.5rem 0.25rem 0;
+            font-weight: 600;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tech-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .tech-item:hover::before {
+            left: 100%;
+        }
+
+        .tech-item:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(245, 87, 108, 1));
+        }
+
+        .project-item {
+            border-left: 4px solid transparent;
+            border-image: linear-gradient(45deg, #667eea, #f093fb) 1;
+            animation: borderGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes borderGlow {
+            from {
+                border-left-color: #667eea;
+                box-shadow: -5px 0 15px rgba(102, 126, 234, 0.3);
+            }
+            to {
+                border-left-color: #f093fb;
+                box-shadow: -5px 0 15px rgba(240, 147, 251, 0.3);
+            }
+        }
+
+        .project-item h3 {
+            color: #f093fb;
+            font-size: 1.2rem;
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 1rem;
+            }
+            
+            .resume-container {
+                padding: 2rem 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .job-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .date-range {
+                align-self: flex-start;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
-<body id = "body" class = "preload">
+<body>
+    <div class="bg-animation"></div>
+    <div class="particles" id="particles"></div>
+    
+    <div class="main-container">
+        <div class="resume-container">
+            <div class="glow-orb glow-orb-1"></div>
+            <div class="glow-orb glow-orb-2"></div>
+            
+            <div class="header fade-in">
+                <h1>VISHNU PYDAH</h1>
+                <div class="contact-info">
+                    <div class="contact-item">📍 Bothell, WA</div>
+                    <div class="contact-item">📞 (781) 698-9359</div>
+                    <div class="contact-item">✉️ vishnuamritpydah@gmail.com</div>
+                </div>
+            </div>
 
-<div src="images/artist2.jpg" id="bg" alt=""> </div>
-<div id="wrapper">
+            <h2 class="fade-in">MISSION</h2>
+            <div class="summary fade-in">
+                <p>Founder and full-stack engineer with 3.5 years at Meta helping build exabyte-scale storage systems. Focused on building for social benefit and working for a brighter future for all 
+                    -- especially for the voiceless and underserved. Currently developing Grassroots, a social platform for non-profit engagement and social good.</p>
+            </div>
 
-    <a id="toknowledge" class="middle-arrow" href="#"></a>
-
-    <div id="intro">
-        <div id="centertext">
-            <div id="part1" class="text1">Hi.</div>
-            <div id="part2" class="text1">My name is Vishnu.</div>
-            <div id="part3" class="text2">I'm a</div>
-            <div id="part4" class="text3">Developer. Designer. Thinker.</div>
-            </br></br></br></br>
-            <div id="part5" class="text4"><span>Care to learn more about me?</span></div>
-        </div>
-    </div>
-
-    <div id="main">
-        <div id="knowledge" class="box loutside container">
-            <div class="middle-of-div">
-                <div class="min_height row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <h2> Completed Ventures </h2>
-                        <h6>Past Experience
-                            <div class="taper"></div>
-                        </h6>
-                        <p>I currently work for Vanderbilt Tech Help. I have experience as a research intern at UT Austin
-                            and I also have taken a number of mathematics and programming courses at Vanderbilt.</p>
-                        <br>
-                        <h6>Project History
-                            <div class="taper"></div>
-                        </h6>
-
-                        <p> I have primarily worked on Android app games like "Planet Vortex" and "Entity." I also have
-                            experience with website development and some backend server coding.</p>
+            <h2 class="fade-in">EXPERIENCE</h2>
+            <div class="experience-item fade-in">
+                <div class="job-header">
+                    <div class="job-title">
+                        <h3>Founder & CEO</h3>
+                        <div class="company">Grassroots Platform</div>
+                        <div class="location">Remote</div>
                     </div>
+                    <div class="date-range">Jan 2024 - Present</div>
+                </div>
+                <ul>
+                    <li>Built alpha SaaS platform for non-profits with donation flows, event management, and social feeds</li>
+                    <li>Developed full-stack application using React, Next.js, Node.js, and Supabase</li>
+                    <li>Designed complete product roadmap and gathered feedback from beta users</li>
+                    <li>Managed end-to-end product development from design (Figma) to deployment</li>
+                </ul>
+            </div>
+
+            <div class="experience-item fade-in">
+                <div class="job-header">
+                    <div class="job-title">
+                        <h3>Software Engineer</h3>
+                        <div class="company">Meta (Facebook)</div>
+                        <div class="location">Menlo Park, CA</div>
+                    </div>
+                    <div class="date-range">Sep 2020 - Apr 2024</div>
+                </div>
+                <ul>
+                    <li>Engineered high-performance C++ systems for Meta's storage platform handling exabytes of data</li>
+                    <li>Optimized data reliability and error correction workflows across multiple engineering teams</li>
+                    <li>Improved distributed system throughput and reduced latency through performance optimization</li>
+                </ul>
+            </div>
+
+            <div class="experience-item fade-in">
+                <div class="job-header">
+                    <div class="job-title">
+                        <h3>Software Engineer Intern</h3>
+                        <div class="company">Facebook (Oculus VR)</div>
+                        <div class="location">Menlo Park, CA</div>
+                    </div>
+                    <div class="date-range">Feb 2019 - Aug 2019</div>
+                </div>
+                <ul>
+                    <li>Built backend infrastructure for collaborative VR experiences using C/C++ and Java</li>
+                    <li>Enhanced synchronization logic for multi-user VR environments across 3 teams</li>
+                </ul>
+            </div>
+
+            <div class="experience-item fade-in">
+                <div class="job-header">
+                    <div class="job-title">
+                        <h3>Software Engineer Intern</h3>
+                        <div class="company">MicroStrategy</div>
+                        <div class="location">Tysons Corner, VA</div>
+                    </div>
+                    <div class="date-range">May 2018 - Aug 2018</div>
+                </div>
+                <ul>
+                    <li>Developed financial chatbot SDKs for Slack and Facebook Messenger integration</li>
+                    <li>Implemented NLP capabilities using Stanford CoreNLP, Google DialogFlow, and Amazon Lex</li>
+                    <li>Built secure OAuth2.0 and SAML authentication flows</li>
+                </ul>
+            </div>
+
+            <h2 class="fade-in">EDUCATION</h2>
+            <div class="education-item fade-in">
+                <div class="job-header">
+                    <div class="job-title">
+                        <h3>Vanderbilt University</h3>
+                        <div class="location">Nashville, TN</div>
+                    </div>
+                    <div class="date-range">Class of 2020</div>
+                </div>
+                <p><strong>M.S. Computer Science, B.A. Mathematics</strong> • GPA: 3.80</p>
+            </div>
+
+            <h2 class="fade-in">SELECTED PROJECTS</h2>
+            <div class="project-item fade-in">
+                <h3>Entity Game Engine</h3>
+                <p>Custom Android game engine with optimized matrix mathematics and polymorphic architecture</p>
+            </div>
+            <div class="project-item fade-in">
+                <h3>RepuGraph Social Network</h3>
+                <p>Bluetooth-based social platform with Firebase backend and real-time notifications</p>
+            </div>
+
+            <h2 class="fade-in">TECHNICAL ARSENAL</h2>
+            <div class="tech-section fade-in">
+                <div class="tech-category">
+                    <span class="tech-label">Languages</span>
+                    <span class="tech-item">C++</span>
+                    <span class="tech-item">JavaScript</span>
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">SQL</span>
+                    <span class="tech-item">C</span>
+                </div>
+                <div class="tech-category">
+                    <span class="tech-label">Frameworks & Tools</span>
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">Next.js</span>
+                    <span class="tech-item">Node.js</span>
+                    <span class="tech-item">PostgreSQL</span>
+                    <span class="tech-item">Supabase</span>
+                    <span class="tech-item">Docker</span>
+                    <span class="tech-item">Firebase</span>
+                </div>
+                <div class="tech-category">
+                    <span class="tech-label">Specialties</span>
+                    <span class="tech-item">Distributed Systems</span>
+                    <span class="tech-item">Full-Stack Development</span>
+                    <span class="tech-item">Product Design</span>
+                    <span class="tech-item">Technical Leadership</span>
                 </div>
             </div>
         </div>
-
-        <div id="interests" class="box leftside container">
-            <div class="middle-of-div">
-                <div class="min_height row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <h2> Interests </h2>
-                        </br>
-                        <table id="formattable" style="width:100%; font-size:calc(12px + 0.2vw);">
-                            <tr>
-                                <th>Chess</th>
-                                <th class="breaker"> |</th>
-                                <td colspan="14">I've been playing chess for six years, and
-                                    I can tell you that the game isn't so black and white after all.
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Tennis</th>
-                                <th class="breaker"> |</th>
-                                <td colspan="14">These days I don't play very often, but I like to say that I play
-                                    vicariously. Go Nadal!
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Video Games</th>
-                                <th class="breaker"> |</th>
-                                <td colspan="14"> To design a good game, sometimes you need to do a little research.
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Acapella</th>
-                                <th class="breaker">|</th>
-                                <td colspan="14">I enjoy singing and listening to traditional South Indian music.
-                                    I usually use the shower head as my mic.
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="portrait" class="box centered container">
-            <div class="middle-of-div">
-                <div class="min_height row">
-                    <!--col-xs-pull-6 col-sm-6 col-sm-offset-3-->
-                    <div class="col-md-offset-1 col-md-4 col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-2 img-container">
-                        <img src="images/profilepic.jpg" alt="VishnuPydah"
-                             class="img-circle portrait-image center-block">
-                    </div>
-
-                    <!--col-sm-offset-1 col-sm-10 col-sm-push-1-->
-                    <div class="col-md-6 col-sm-5 col-xs-12 text_item nomargin">
-                        <h4 class="media-heading">About me</h4>
-                        </br>
-                        <p> Hi! I'm Vishnu, currently a Computer Science and Mathematics major at Vanderbilt University.
-                            I have all-around experience with programming, including
-                            full-stack web development and android app coding.
-                            </br>
-                            <a class="read_more"> > Read more </a>
-                        </p>
-
-                        <p class="expandable">
-                    <span>
-                        As much as I take coding seriously, I love doing it. Drew Houston, the founder of
-                        Dropbox, said, "coding is the closest thing people have to a superpower." </span>
-
-                            <span>I'm excited about the future filled with the promise of superhuman AI and quantum processors,
-                        so I'm not just keeping my fingers crossed: I'm keeping them at the keyboard, ready to bring
-                        those days closer.
-                    </span>
-                            <a class="read_less"> < Less </a>
-                        </p>
-                        </br>
-                        <div style="width: 100%; display: flex; justify-content: center;">
-                            <form action = "./pdfs/PydahVishnuResume.pdf">
-                            <button id="resume2">R E S U M É</button>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="skills" class="box rightside container">
-            <div class="middle-of-div container-fluid">
-                <div class="min_height row">
-                    <div class="col-xs-12">
-                        <h2 style="padding-bottom: 10px">Development Skills</h2>
-                    </div>
-
-                    <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-
-                        <div class="col-sm-12 col-xs-12 acenter">
-
-                            <div class="row">
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">C/C++ </span></div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★★★★</span></div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">Java </span></div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★★★★</span></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-12 col-xs-12 acenter">
-
-                            <div class="row">
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">HTML/CSS </span></div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★★★★</span></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">Javascript </span>
-                                        </div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★★★</span>☆</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-12 col-xs-12 acenter">
-
-                            <div class="row">
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">Bootstrap </span>
-                                        </div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★★★</span>☆</div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">JQuery </span></div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★★★</span>☆</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-12 col-xs-12 acenter">
-
-                            <div class="row">
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">NodeJS </span></div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★★</span>☆☆</div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6"><span class="pull-right">Python </span></div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★★</span>☆☆</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-12 col-xs-12 acenter">
-                            <div class="row">
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">C# </span></div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★★</span>☆☆</div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">Lua </span></div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★</span>☆☆☆</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-12 col-xs-12 acenter">
-
-                            <div class="row">
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">SQL </span></div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★★</span>☆☆☆</div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-xs-12 autocenter">
-                                    <div class="row">
-                                        <div class="col-xs-6 dashborder"><span class="pull-right">PHP </span></div>
-                                        <div class="col-xs-6 dashborder"><span class="stars">★</span>☆☆☆☆</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-xs-10 col-xs-offset-1" style = "padding-top: 30px">
-                        <h2 style="padding-bottom: 10px">Additional Skills</h2>
-                        <div class="row">
-                            <div class="col-xs-10 col-xs-offset-1 addskills">
-                                <p>Familiar with programming tools like Git, SmartGit, BitBucket, and SourceTree</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="projects" class="box routside container">
-            <div class="middle-of-div">
-                <div class="min_height row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <h2> Current Projects </h2>
-                        <h6>Android and Game Development</h6>
-                        <p> An Android app game incorporating physics, mathematics, and simple AI algorithms.
-                            Currently in development stages.</p>
-                        <hr>
-                        <h6>NodeJS Development</h6>
-                        <p> Experimentation with NodeJS server development. Improving server
-                            security and authentication methodology are the end-goals of this side-project.</p>
-                        <hr>
-                        <h6>Raspberry Pi Tinkering</h6>
-                        <p> I thought I would acquaint myself with a slice of Raspberry Pi.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <a id="right"></a>
-        <a id="left"></a>
     </div>
 
-    <button id="dropbutton" class = "button_close"></button>
-    <div id="menubar">
-        <nav id="navigation" class = "closed">
-            <ul id="ul1" class="underlinemenu" style="font-family: 'Futura LT'">
-                <li id="a"><span>ABOUT ME</span></li>
-                <li id="b"><span>SKILLS</span></li>
-                <li id="c"><span>PROJECTS</span></li>
-                <li id="d"><span>EXPERIENCE</span></li>
-                <li id="e"><span>INTERESTS</span></li>
-            </ul>
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
 
-            <ul id="ul2" class="hider" style="list-style-type: none;">
-                <li><span
-                        style="font-size: 8px; height: 12px;">vishnu.a.pydah@vanderbilt.edu</span></li>
-                <li><span style="font-size: 8px; height: 12px;">781-698-9359</span></li>
-                <li><span style="font-size: 8px; height: 12px;">github.com/vpamrit</span>
-                </li>
-                <li><a href = "./pdfs/PydahVishnuResume.pdf" style="font-size: 8px; height: 12px;">Resume</a></li>
-            </ul>
-        </nav>
-    </div>
+        // Scroll animations
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            elements.forEach(el => observer.observe(el));
+        }
 
-    <form action = "./pdfs/PydahVishnuResume.pdf">
-    <button id="resume">R E S U M É</button>
-    </form>
+        // Tech item click effects
+        function addTechItemEffects() {
+            const techItems = document.querySelectorAll('.tech-item');
+            
+            techItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+        }
 
-    <div id="botbar">
-        <nav>
-            <ul class="underlinemenu" style="font-family: 'Futura LT'">
-                <li><span>vishnu.a.pydah@vanderbilt.edu</span></li>
-                <li><span>781-698-9359</span></li>
-                <li><span>github.com/vpamrit</span></li>
-            </ul>
-        </nav>
-    </div>
+        // Mouse tracking effect
+        function addMouseTracking() {
+            const container = document.querySelector('.resume-container');
+            
+            container.addEventListener('mousemove', (e) => {
+                const rect = container.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const deltaX = (x - centerX) / centerX;
+                const deltaY = (y - centerY) / centerY;
+                
+                container.style.transform = `perspective(1000px) rotateY(${deltaX * 2}deg) rotateX(${-deltaY * 2}deg)`;
+            });
+            
+            container.addEventListener('mouseleave', () => {
+                container.style.transform = '';
+            });
+        }
 
-    <div id="endbuffer" class="container-fluid">
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-    </div>
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            handleScrollAnimations();
+            addTechItemEffects();
+            addMouseTracking();
+            
+            // Initial fade-in for header
+            setTimeout(() => {
+                document.querySelector('.header').classList.add('visible');
+            }, 300);
+        });
 
-</div>
-
-<script type="text/javascript">
-    var scrolledDown = false;
-    var stop = false;
-    var curposition = 0;
-    var intro_over = false;
-    var open = false;
-    var isScrolling = false;
-</script>
-
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"
-        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-<!--<script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
-<script type="text/javascript" src="intro.js"></script>
-<script type="text/javascript" src="developmentanimation.js"></script>
-<script type="text/javascript" src="carousel.js"></script>
-<script type="text/javascript" src="floatingarrow.js"></script>
-<script type="text/javascript" src="onResize.js"></script>
+        // Add parallax scrolling effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.bg-animation');
+            const speed = scrolled * 0.5;
+            parallax.style.transform = `translateY(${speed}px)`;
+        });
+    </script>
 </body>
-
 </html>
